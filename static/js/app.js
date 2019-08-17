@@ -21,18 +21,16 @@ var button = d3.select("#filter-btn");
 
 // function that will get user input from form and use it to filter upon clicking button
 button.on("click", function() {
-    // get the raw HTML from selection
-    var inputElement = d3.select("#datetime");
-
-    // get value property of the input element
-    var inputValue = inputElement.property("value");
+    // make variables for inputs and values for date and city
+    var dateInput = d3.select("#date-filter");
+    var dateValue = dateInput.property("value");
+    var cityInput = d3.select("#city-filter");
+    var cityValue = cityInput.property("value");
 
     // use input to filter data by date
-    var filtered = tableData.filter(item => item.datetime===inputValue);
-
+    var filtered = tableData.filter(item => item.datetime===dateValue && item.city===cityValue.toLowerCase());
     // clear table info before appending filtered data
     tbody.html(``);
-
     // adding filtered data
     filtered.forEach( item => {
         var tr = tbody.append('tr');
@@ -43,5 +41,7 @@ button.on("click", function() {
         tr.append('td').text(item.shape);
         tr.append('td').text(item.durationMinutes);
         tr.append('td').text(item.comments);
-    })
+    });
 });
+
+
