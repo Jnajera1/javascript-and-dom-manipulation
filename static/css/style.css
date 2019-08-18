@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Lexend Mega', sans-serif;
 }
 
 html,
@@ -10,12 +10,17 @@ body {
   margin: 0;
 }
 
+.navbar-custom, .container-custom {
+  background-color: #04293A;
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
+  background-color: #04293A;
 }
 
 /* The footer is positioned at the bottom of the page */
@@ -25,7 +30,7 @@ body {
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #4e5d6c;
+  background: #04293A;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -35,7 +40,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #04293A;
 }
 
 .navbar {
@@ -47,7 +52,7 @@ body {
 .nav-ufo {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 215px;
   width: 35px;
   color: white;
 }
@@ -69,7 +74,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: #04293A;
   outline: none;
 }
 
@@ -98,14 +103,14 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492179299/articles/2015/07/02/why-do-ufos-love-this-utah-ranch-so-much/150701-strolhlic-ufo-tease_avkv8u");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-top: 100px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
 }
@@ -153,7 +158,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #04293A;
   }
 
   #table-area tr td:last-child {
@@ -166,7 +171,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: #04293A;
   }
 
   #table-area td {
