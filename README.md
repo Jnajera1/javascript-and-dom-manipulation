@@ -44,7 +44,7 @@ var tableData = data;
 var tbody = d3.select('tbody');
 ```
 
-Next, I wanted to loop through all the 'tableData' and add a new row <tr> for each object with the values of their keys in new cells <td>. I was able to append the cells and the text of data at the same time.
+Next, I wanted to loop through all the 'tableData' and add a new row \<tr\> for each object with the values of their keys in new cells \<td\>. I was able to append the cells and the text of data at the same time.
 
 ```javascript
 // append objects from data.js into new table rows inside table body
