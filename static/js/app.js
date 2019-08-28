@@ -30,7 +30,9 @@ button.on('click', function() {
     var cityValue = cityInput.property('value');
 
     // use input to filter data by date
-    var filtered = tableData.filter(item => item.datetime === dateValue && item.state === stateValue.toLowerCase() && item.city === cityValue.toLowerCase());
+    var filtered = tableData.filter(item => item.datetime === dateValue)
+    //  && item.state === stateValue.toLowerCase() && item.city === cityValue.toLowerCase());
+    // console.log(filtered);
     // clear table info before appending filtered data
     tbody.html(``);
     // adding filtered data
