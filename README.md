@@ -1,5 +1,7 @@
 # JavaScript and DOM Manipulation
 
+Please find my site [here](https://kathleengraham.github.io/javascript-and-dom-manipulation/).
+
 ### Data
 
 The data.js file had more entries such as these two:
@@ -34,7 +36,7 @@ I used a premade index.html file with fancy bootstrap and images already chosen.
 
 In this file, I started with making more explicit variables than just 'data' in order to remember more easily throughout coding. If this file had been larger with many more functions, this would be especially important to think of from the start.
 
-Using d3.js, I was able to search through the HTML and select the 'tbody' tag in order to make it my variable for the entire table body.
+Using d3.js, I was able to search through the HTML and select the \<tbody\> tag in order to make it my variable for the entire table body.
 
 ```javascript
 // create more explicit variable
