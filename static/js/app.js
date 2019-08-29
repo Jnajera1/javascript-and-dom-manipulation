@@ -24,10 +24,10 @@ button.on('click', function() {
     // make variables for inputs and values for date and city
     var dateInput = d3.select('#date-filter');
     var dateValue = dateInput.property('value');
-    var stateInput = d3.select('#state-filter');
-    var stateValue = stateInput.property('value');
-    var cityInput = d3.select('#city-filter');
-    var cityValue = cityInput.property('value');
+    // var stateInput = d3.select('#state-filter');
+    // var stateValue = stateInput.property('value');
+    // var cityInput = d3.select('#city-filter');
+    // var cityValue = cityInput.property('value');
 
     // use input to filter data by date
     var filtered = tableData.filter(item => item.datetime === dateValue)
